@@ -23,22 +23,28 @@
 .brand{
   margin-left: 40px;
 }
+.brand h1{
+  font-size: 1.5rem;
+}
 .links{
   width: 50vw;
   display: grid;
   grid-template-columns: repeat(4,1fr);
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 .links li{
-  display: grid;
-  align-items: center;
-  justify-content: center;
+  
   list-style-type: none;
+  text-align: center;
+  padding: 2rem 1rem;
 }
 .links li a{
-  display: grid;
-  align-items: center;
-  justify-content: center;
   text-decoration: none;
+}
+.links li a:hover, .links li a:focus{
+  background-color: #3399cc;
+  width: 20vw;
+  padding: 2rem 1rem;
 }
