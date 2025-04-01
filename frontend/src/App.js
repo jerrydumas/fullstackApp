@@ -15,8 +15,10 @@ function App() {
           <li><a>Contact</a></li>
         </ul>
         </div>
-        
       </nav>
+      <section className="hero">
+      </section>
+      <section className="info"></section>
     </div>
   );
 }
