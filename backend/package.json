@@ -5,8 +5,9 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "server": "nodemon backend/server"
+    "server": "nodemon server"
   },
+  "keywords": [],
   "author": "Jerry Dumas",
   "license": "ISC",
   "dependencies": {
