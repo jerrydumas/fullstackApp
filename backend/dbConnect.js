@@ -7,8 +7,8 @@ const client = new MongoClient(uri);
 
 async function run() {
   try {
-    const database = client.db('AmazingMernApp');
-    const movies = database.collection('animals');
+    const database = client.db('AmazingMernApp.');
+    const animals = database.collection('animals');
 
   } finally {
     // Ensures that the client will close when you finish/error
