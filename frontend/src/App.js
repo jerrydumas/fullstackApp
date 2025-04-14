@@ -2,16 +2,16 @@ import './App.css';
 import {useState,useEffect} from 'react'
 import axios from 'axios'
 function App() {
-  const [animals,setAnimals] = useState([])
+  const [listings,setListings] = useState([])
   useEffect(() => {
-    const allAnimals = axios.get(`https://fullstackapp-zb20--5000--fb22cd3d.local-credentialless.webcontainer.io/api/animals`)
-    setAnimals(allAnimals)
-    .then(function (allAnimals) {
-      console.log(allAnimals.data);
-      console.log(allAnimals.status);
-      console.log(allAnimals.statusText);
-      console.log(allAnimals.headers);
-      console.log(allAnimals.config);
+    const allListings = axios.get(`https://fullstackapp-zb20--5000--fb22cd3d.local-credentialless.webcontainer.io/api/animals`)
+    setListings(allListings)
+    .then(function () {
+      console.log(allListings.data);
+      console.log(allListings.status);
+      console.log(allListings.statusText);
+      console.log(allListings.headers);
+      console.log(allListings.config);
     }); 
   }, [])
   return (
@@ -33,6 +33,14 @@ function App() {
       </section>
       <section className="info"></section> */}
       <div>
+{listings.map((item)=>{
+<ul key={item._id}>
+  <li>{item.avenue}</li>
+  <li>{item.price}</li>
+  <li>{item.rooms}</li>
+</ul>
+})}
+
 
       </div>
     </div>

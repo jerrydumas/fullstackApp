@@ -14,8 +14,8 @@ app.get('/', (req, res) => {
 app.get('/api/animals', (req, res) => {
   res.send("Hola From Doras World")
   const database = client.db('krislen');
-  const animals = database.collection('listings').find({}).toArray();
-    console.log(animals)
+  const listings = database.collection('listings').find({}).toArray();
+    console.log(listings)
 })
 
 app.listen(port, () => {
